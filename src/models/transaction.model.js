@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const transactionSchema = new mongoose.Schema(
   {
@@ -39,4 +39,6 @@ const transactionSchema = new mongoose.Schema(
   },
 );
 
-const transactionModel = new mongoose.model("transaction", transactionModel);
+const transactionModel = new mongoose.model("transaction", transactionSchema);
+
+export default transactionModel
