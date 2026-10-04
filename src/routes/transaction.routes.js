@@ -2,7 +2,7 @@ import { Router } from "express"
 import authMiddleware from "../middleware/auth.middleware.js"
 import transactionController from "../controllers/transaction.controller.js"
 
-const TransactionRoutes=Router()
+const transactionRoutes=Router()
 
 transactionRoutes.post("/",authMiddleware.middleware , transactionController.createTransaction)
 
